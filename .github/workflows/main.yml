@@ -18,6 +18,7 @@ jobs:
 
       - name: dump environment
         run: |
+          mount
           if [ -z "$UNITY_EMAIL" ]; then
             echo "UNITY_EMAIL is empty"
           fi
